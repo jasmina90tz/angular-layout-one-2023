@@ -1,7 +1,19 @@
 <nav>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
+  <div class="mobile-menu" (click)="toggleMobileMenu()">
+    <div class="logo-burger-wrapper">
+      <img src="assets/images/logo_trans.png" alt="Logo" class="logo" />
+      <div class="burger-icon-wrapper">
+        <div class="burger-icon">&#9776;</div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-wrapper" [ngClass]="{ open: isMobileMenuOpen }">
+    <div class="nav-links">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
 </nav>
+
+<router-outlet></router-outlet>

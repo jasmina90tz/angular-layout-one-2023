@@ -1,9 +1,64 @@
 /* navigation.component.css */
 nav {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #172a48;
+}
+
+.logo-burger-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.mobile-menu {
+  display: none;
+  width: 100%;
+}
+
+.burger-icon-wrapper {
+  cursor: pointer;
+}
+
+.burger-icon {
+  font-size: 2em; /* adjust as necessary */
+  color: white;
+}
+
+.nav-wrapper {
+  position: absolute;
+  top: 75px; // Adjust this value depending on the height of your navbar
+  left: 0;
+  background-color: #172a48;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+  text-align: center;
+  background: orange;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-wrapper.open {
+    max-height: 1000px; // You may need to adjust this depending on the height of your content
+  }
 }
