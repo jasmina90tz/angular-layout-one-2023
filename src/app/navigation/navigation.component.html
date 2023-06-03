@@ -9,8 +9,8 @@
   </div>
   <div class="nav-wrapper" [ngClass]="{ open: isMobileMenuOpen }">
     <div class="nav-links">
-      <a routerLink="/">Home</a>
-      <a routerLink="/profile">Profile</a>
+      <a routerLink="/" (click)="toggleMobileMenu()">Home</a>
+      <a routerLink="/profile" (click)="toggleMobileMenu()">Profile</a>
     </div>
   </div>
 </nav>

@@ -13,7 +13,12 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleMobileMenu() {
+  toggleMobileMenu(event?: Event) {
+    if (event) {
+      event.stopPropagation();
+    }
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
+
 }
+
