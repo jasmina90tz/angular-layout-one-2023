@@ -13,6 +13,16 @@ nav {
   width: 100%;
 }
 
+.logo-link,
+.nav-links a {
+  color: white; /* set the color of the top-level links to white */
+  text-decoration: none;
+}
+
+.logo-link:hover,
+.nav-links a:hover {
+  color: #ccc; /* add a hover effect */
+}
 
 .mobile-menu {
   display: none;
@@ -30,13 +40,14 @@ nav {
 
 .nav-wrapper {
   position: absolute;
-  top: 75px; // Adjust this value depending on the height of your navbar
+  top: 75px;
   left: 0;
   background-color: #172a48;
   width: 100%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.1s ease-in-out;
+  display: none; /* Hide nav-wrapper by default */
 }
 
 .nav-links {
@@ -59,6 +70,25 @@ nav {
   }
 
   .nav-wrapper.open {
-    max-height: 1000px; // You may need to adjust this depending on the height of your content
+    max-height: 1000px;
+    display: flex; /* Show nav-wrapper when open */
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-wrapper {
+    position: static;
+    max-height: none;
+    display: flex; /* Show nav-wrapper on larger screens */
+  }
+
+  .nav-links {
+    flex-direction: row; /* Make the links horizontal on larger screens */
+    gap: 2em;
+    text-align: left;
+  }
+
+  .mobile-menu {
+    display: none; /* Hide mobile menu on larger screens */
   }
 }
