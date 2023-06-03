@@ -7,6 +7,11 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { TeamComponent } from './team/team.component';
+import { ForCompaniesComponent } from './for-companies/for-companies.component';
+import { ForApplicantsComponent } from './for-applicants/for-applicants.component';
+import { VacanciesComponent } from './vacancies/vacancies.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
     NavigationComponent,
     ProfileComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    TeamComponent,
+    ForCompaniesComponent,
+    ForApplicantsComponent,
+    VacanciesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
