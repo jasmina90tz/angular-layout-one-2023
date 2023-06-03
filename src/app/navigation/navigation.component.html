@@ -1,7 +1,9 @@
 <nav>
   <div class="mobile-menu" (click)="toggleMobileMenu()">
     <div class="logo-burger-wrapper">
-      <img src="assets/images/logo_trans.png" alt="Logo" class="logo" />
+      <a [routerLink]="['/']" class="logo-link" (click)="toggleMobileMenu()">
+        <img src="assets/images/logo_trans.png" alt="Logo" class="logo" />
+      </a>
       <div class="burger-icon-wrapper">
         <div class="burger-icon">&#9776;</div>
       </div>
