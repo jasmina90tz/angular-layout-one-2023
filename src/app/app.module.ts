@@ -12,6 +12,7 @@ import { ForCompaniesComponent } from './for-companies/for-companies.component';
 import { ForApplicantsComponent } from './for-applicants/for-applicants.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
 import { ContactComponent } from './contact/contact.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     ForCompaniesComponent,
     ForApplicantsComponent,
     VacanciesComponent,
-    ContactComponent
+    ContactComponent,
+    JumbotronComponent
   ],
   imports: [
     BrowserModule,
