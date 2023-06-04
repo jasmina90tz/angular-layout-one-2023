@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image-slider.component.scss']
 })
 export class ImageSliderComponent implements OnInit {
-  images: string[] = ['about-us-slider-1.jpg', 'about-us-slider-2-we-offer-welcoming-culture.jpg', 'about-us-slider-3-erfolgreiches-start-up-team-klatscht-hnde-ab.jpg'];
-  currentImage: string = this.images[0];
+  images: { url: string, heading: string, paragraph: string }[] = [
+    { url: 'about-us-slider-1.jpg', heading: 'Slider Heading 1', paragraph: 'Slider Paragraph 1' },
+    { url: 'about-us-slider-2-we-offer-welcoming-culture.jpg', heading: 'Slider Heading 2', paragraph: 'Slider Paragraph 2' },
+    { url: 'about-us-slider-3-erfolgreiches-start-up-team-klatscht-hnde-ab.jpg', heading: 'Slider Heading 3', paragraph: 'Slider Paragraph 3' }
+  ];
+  currentImage: { url: string, heading: string, paragraph: string } = this.images[0];
 
   ngOnInit(): void {
     this.startSlider();
@@ -21,3 +25,5 @@ export class ImageSliderComponent implements OnInit {
     }, 5000);
   }
 }
+
+

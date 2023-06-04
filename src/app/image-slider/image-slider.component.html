@@ -2,13 +2,13 @@
   <div
     *ngFor="let image of images"
     class="slide"
-    [style.background-image]="'url(assets/images/' + image + ')'"
+    [style.background-image]="'url(assets/images/' + image.url + ')'"
     [class.active]="image === currentImage"
   >
     <div class="overlay">
       <div class="content">
-        <h4>Slider Heading</h4>
-        <p>This is a sample text.</p>
+        <h4>{{ image.heading }}</h4>
+        <p>{{ image.paragraph }}</p>
       </div>
     </div>
   </div>
