@@ -1,5 +1,5 @@
 // ./src/app/profile.component.ts
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ProfileComponent implements OnInit {
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+  @Input() name!: string;
+  @Input() position!: string;
+  @Input() description!: string;
+  @Input() contactEmail!: string;
+  @Input() imageUrl!: string;
 }

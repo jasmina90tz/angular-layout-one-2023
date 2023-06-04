@@ -1,71 +1,39 @@
-* {
-  font-family: "Courier New", Courier, monospace;
-}
-#partner-section {
-    text-align: center;
-    max-width: 1000px;
+.profile-component {
+    display: grid;
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-h2 {
-  margin: 0 0 20px;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 20px;
-  text-align: left;
-  max-width: 100%;
-}
-
-.left-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    grid-template-columns: 30% 1fr; /* 30% for image, 1fr for text */
+    gap: 1rem; /* Gap between image and text */
+    align-items: center; /* Center vertically */
 }
 
 .profile-image {
-  width: 100%;
-  border-radius: 50%;
-  overflow: hidden;
+    width: 100%; /* Ensure image fills the grid cell */
 }
 
 .profile-image img {
-  display: block;
-  width: 100%;
-  height: auto;
+    width: 100%; /* Make the image take up the full width of the cell */
+    border-radius: 50%; /* Apply a circular border radius */
 }
 
-.right-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.profile-details {
+    // display: grid;
+    // gap: 0.5rem; /* Gap between text elements */
+    // justify-self: start; /* Left-align the text */
+
+    display: flex;
+    flex-direction: column;
 }
 
-h3 {
-  margin-top: 0;
+.profile-details h3,
+.profile-details p {
+    margin: 0; /* Remove default margin */
 }
 
-.description {
-  margin-top: 20px;
+.profile-details .description {
+    grid-column: span 2; /* Make the description span across both grid columns */
 }
 
-.contact {
-  margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-  .content {
-    grid-template-columns: 1fr;
-    grid-row-gap: 20px;
-  }
-
-  .left-section {
-    justify-content: flex-start;
-  }
-
-  .right-section {
-    text-align: center;
-  }
-}
+// .contact {
+//     grid-column: 2; /* Align contact details to the right grid column */
+// }
