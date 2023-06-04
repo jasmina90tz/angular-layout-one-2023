@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
+import { TextOverImageComponent } from './text-over-image/text-over-image.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
     ContactComponent,
     JumbotronComponent,
     FooterComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    TextOverImageComponent
   ],
   imports: [
     BrowserModule,
