@@ -1,4 +1,42 @@
-<h1>contact works!</h1>
 <app-jumbotron [title]="'Regular Title'"></app-jumbotron>
+
+<div style="max-width: 870px; margin: 0 auto; padding: 70px 10px">
+  <h2>Contact Form</h2>
+  <form #contactForm="ngForm" (ngSubmit)="submitForm(contactForm)">
+    <div>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        [(ngModel)]="formData.name"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        [(ngModel)]="formData.email"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        [(ngModel)]="formData.message"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
 <app-footer [title]="'Regular Title'"></app-footer>
