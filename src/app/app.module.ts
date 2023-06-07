@@ -17,7 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { TextOverImageComponent } from './text-over-image/text-over-image.component';
 import { ServicesComponent } from './services/services.component';
-import { TextOverVideoComponent } from './text-over-video/text-over-video.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,6 @@ import { TextOverVideoComponent } from './text-over-video/text-over-video.compon
     ImageSliderComponent,
     TextOverImageComponent,
     ServicesComponent,
-    TextOverVideoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
