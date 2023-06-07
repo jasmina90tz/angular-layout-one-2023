@@ -1,0 +1,11 @@
+.centered-container {
+  display: grid;
+  place-items: center;
+  height: 20vh;
+  text-align: justify;
+  word-wrap: break-word;
+  padding-block: 20px;
+}
+@-ms-viewport {
+  width: device-width;
+}

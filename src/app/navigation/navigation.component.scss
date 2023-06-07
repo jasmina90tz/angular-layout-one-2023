@@ -38,6 +38,7 @@ nav {
 .burger-icon {
   font-size: 2em;
   color: white;
+  position: relative;
 }
 
 .nav-wrapper {
@@ -52,6 +53,7 @@ nav {
 }
 
 .nav-links {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -102,4 +104,7 @@ nav {
   .mobile-menu {
     display: none;
   }
+}
+@-ms-viewport {
+  width: device-width;
 }

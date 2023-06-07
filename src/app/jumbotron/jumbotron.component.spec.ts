@@ -8,7 +8,7 @@ describe('JumbotronComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [JumbotronComponent]
+      declarations: [JumbotronComponent],
     });
     fixture = TestBed.createComponent(JumbotronComponent);
     component = fixture.componentInstance;
