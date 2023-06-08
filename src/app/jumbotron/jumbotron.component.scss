@@ -1,6 +1,5 @@
 .jumbotron {
   width: 100%;
-  padding: 3%;
   justify-content: center;
 }
 .image-container {
@@ -9,6 +8,7 @@
   align-items: center;
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 .image-container img {
   display: block;
@@ -29,18 +29,16 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-bottom: 56.25%; /* Set the aspect ratio (16:9 for example) */
-  height: 0;
   overflow: hidden;
+  height: 500px;
+  object-fit: cover;
 }
 .video-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
-  padding: o;
-  margin: 0;
+  height: 100%;
   object-fit: cover;
 }
 .video-container video::-webkit-media-controls {
@@ -53,15 +51,15 @@
 }
 .video-container .video-text {
   position: absolute;
-  top: 25%;
-  left: 50%;
+  display: block;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 24px;
   text-align: center;
 }
 .video-text {
-  position: absolute;
+  position: relative;
+  display: inline;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -72,4 +70,24 @@
 }
 @-ms-viewport {
   width: device-width;
+}
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.video-controls {
+  display: none;
+}
+.video-container video::-webkit-media-controls {
+  display: none !important;
+}
+.video-container video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+.video-container video::-webkit-media-controls-panel {
+  display: none !important;
+} /* For Firefox */
+.video-container video::-moz-media-controls {
+  display: none !important;
 }

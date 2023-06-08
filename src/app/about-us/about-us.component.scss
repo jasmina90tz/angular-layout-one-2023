@@ -1,11 +1,21 @@
-.centered-container {
-  display: grid;
-  place-items: center;
-  height: 20vh;
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header {
+  margin-right: 10px;
+}
+p {
   text-align: justify;
   word-wrap: break-word;
-  padding-block: 20px;
+  padding: 1em;
 }
+.image {
+  flex-shrink: 0;
+  width: 50%;
+}
+
 @-ms-viewport {
   width: device-width;
 }
