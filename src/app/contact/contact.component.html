@@ -1,11 +1,16 @@
 <app-jumbotron [title]="'Regular Title'"></app-jumbotron>
 
 <div style="max-width: 870px; margin: 0 auto; padding: 70px 10px">
-  <h2>Contact Form</h2>
-  <form #contactForm="ngForm" (ngSubmit)="submitForm(contactForm)">
-    <div>
-      <label for="name">Name:</label>
+  <h2 style="display: flex; justify-content: flex-start">KONTAKT</h2>
+  <h3>Wir beraten Sie gerne. Nehmen Sie Kontakt mit uns auf.</h3>
+  <form
+    class="contact"
+    #contactForm="ngForm"
+    (ngSubmit)="submitForm(contactForm)"
+  >
+    <div class="a">
       <input
+        placeholder="Vorname"
         type="text"
         id="name"
         name="name"
@@ -13,10 +18,29 @@
         required
       />
     </div>
-
-    <div>
-      <label for="email">Email:</label>
+    <div class="b">
       <input
+        placeholder="Nachname"
+        type="text"
+        id="forname"
+        name="forname"
+        [(ngModel)]="formData.name"
+        required
+      />
+    </div>
+    <div class="c">
+      <input
+        placeholder="Telefon"
+        type="number"
+        id="telefon"
+        name="telefon"
+        [(ngModel)]="formData.name"
+        required
+      />
+    </div>
+    <div class="d">
+      <input
+        placeholder="E-Mail"
         type="email"
         id="email"
         name="email"
@@ -24,10 +48,9 @@
         required
       />
     </div>
-
-    <div>
-      <label for="message">Message:</label>
+    <div class="e">
       <textarea
+        placeholder="Nachricht"
         id="message"
         name="message"
         [(ngModel)]="formData.message"
@@ -35,7 +58,7 @@
       ></textarea>
     </div>
 
-    <button type="submit">Submit</button>
+    <button class="f" type="submit">ABSENDEN</button>
   </form>
 </div>
 

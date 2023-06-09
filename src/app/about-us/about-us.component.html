@@ -1,26 +1,31 @@
 <app-jumbotron [title]="'Regular Title'"></app-jumbotron>
 <div>
   <div class="container">
-    <div>
-      <h2 class="header">ABOUT US</h2>
+    <div class="a">
+      <h2 class="header">Über uns</h2>
+      <p>Gründer und CEO von Alpha Medical d.o.o.</p>
+      <p>Abschluss an der juristischen Fakultät der Universität Tuzla.</p>
       <p>
-        Moje ime je Adnan Civic. Po struci sam diplomirani pravnik. Fakultet sam
-        zavrsio 2018. godine na Pravnom fakuktetu Univerziteta u Tuzli.
-        Posredovanjem u zpoasljavanju medicinskih sestara i tehnicara se bavim
-        aktivno vec 4 godine. Kroz moj prethodni rad ostvario sam velike
-        rezultate posredujuci preko 150 kandidata u razlicite pokrajine u
-        Njemackoj.
+        Herr Civic verfügt über umfangreiche Berufserfahrung in der
+        medizinischen Personalbeschaffung für Arbeitgeber in Deutschland.
+      </p>
+      <p>
+        Als Gründer von Alpha Medical d.o.o. ist er für die gesamte Organisation
+        und alle Belange der Kandidaten vom ersten Kontakt bis zur
+        Unterzeichnung der Arbeitsverträge in Deutschland verantwortlich.
       </p>
     </div>
-    <img src="assets/images/aboutus.jpg" alt="img" class="image" />
+    <div class="b">
+      <img src="assets/images/aprofile.png" alt="img" class="image" />
+    </div>
   </div>
+  <p class="moto">
+    Lebensmotto: "Erfolg ist nicht der Schlüssel zum Glück, Zufriedenheit ist
+    der Schlüssel zum Erfolg. Wenn Sie Ihre Arbeit lieben, werden Sie auch
+    erfolgreich sein."
+  </p>
   <div class="centered-container">
     <!-- slider -->
-
-    <h3>We Offer</h3>
-    <p>Professional support from recruiting to on-boarding</p>
-    <p>Breaking down language barriers</p>
-    <p>When things get difficult: Coaching as a cultural conflict solver</p>
   </div>
 
   <app-image-slider></app-image-slider>
@@ -30,34 +35,31 @@
   <div class="centered-container">
     <!-- for us... -->
     <p>
-      For us, the mandate does not end with simply filling the position. Rather,
-      we are also available for an intensive and continuous dialogue with
-      customers and candidates in order to ensure the highest quality and
-      transparency in every development phase - it's about trust, development
-      and seniority.
+      Für uns endet das Mandat nicht mit der bloßen Besetzung der Stelle.
+      Vielmehr stehen wir den Kandidaten als Unterstützung zur Verfügung, um in
+      jeder Entwicklungsphase höchste Qualität und Transparenz zu gewährleisten
+      - es geht um Vertrauen, Entwicklung und Betriebszugehörigkeit.
     </p>
   </div>
   <!-- /for us... -->
+  <div class="image-container">
+    <img src="assets/images/nurse.jpg" alt="" />
+  </div>
 
-  <img
-    src="assets/images/medical-staff-hands-clasped-together-sitting-at-a-desk.jpg"
-    alt=""
-  />
-  <h3 style="display: flex; justify-content: center">Our motto</h3>
   <div class="centered-container">
     <!-- our motto -->
+    <h3 class="unmotto">Unser Motto</h3>
     <p>
-      Our motto We make an active contribution to combating the shortage of
-      skilled workers in the German healthcare system by helping skilled workers
-      from abroad to find a good employer here in Germany and accompanying them
-      on their way to professional recognition.
+      Wir leisten einen aktiven Beitrag zur Bekämpfung des Fachkräftemangels im
+      deutschen Gesundheitswesen, indem wir Fachkräften aus dem Ausland helfen,
+      einen guten Arbeitgeber in Deutschland zu finden und sie auf ihrem Weg zur
+      beruflichen Anerkennung begleiten.
     </p>
     <p>
       We speak languages ​​and our multicultural background shows that we also
       live our mission: to bring people together across national borders and
       cultures.
     </p>
-
-    <app-footer [title]="'Regular Title'"></app-footer>
   </div>
+  <app-footer [title]="'Regular Title'"></app-footer>
 </div>

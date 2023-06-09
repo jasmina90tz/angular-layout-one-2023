@@ -2154,6 +2154,7 @@ body.edit .badge:before {
   box-shadow: none;
   transform: none;
   transition: all 0.3s ease-in-out;
+
   background: #172a48;
   color: #fff;
   border-color: rgba(0, 0, 0, 0);
@@ -3796,6 +3797,11 @@ address {
 .ed-element.preset-boxen-akkordeon > .inner {
   padding: 1rem 0;
   margin: 0;
+  height: 469px;
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 400px;
+  justify-content: center;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
