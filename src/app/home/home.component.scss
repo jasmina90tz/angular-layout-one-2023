@@ -22,7 +22,11 @@ html {
 @-ms-viewport {
   width: device-width;
 }
-
+.homemoto {
+  justify-content: center;
+  display: flex;
+  color: rgba($color: rgb(243, 240, 240), $alpha: 0.9);
+}
 p {
   margin-top: 0;
 }
@@ -5091,6 +5095,7 @@ h3 {
 .image-container {
   width: 100%; /* Set the desired width of the container */
   height: 100%; /* Set the desired height of the container */
+  object-fit: cover;
 }
 
 .image {

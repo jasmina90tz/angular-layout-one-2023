@@ -1,17 +1,19 @@
 <div class="jumbotron-content">
   <ng-container *ngIf="title === 'For Applicants'; else defaultContent">
-    <h2>{{ title }}</h2>
-    <img
-      src="assets/images/vacancies-jumbotron.jpg"
-      alt="Hello Nurse"
-      class="jumbotron"
-    />
+    <div class="video-container">
+      <video
+        src="assets/videos/Alphamed-video.mp4"
+        controls="false"
+        loop
+        autoplay
+      ></video>
+    </div>
   </ng-container>
 
   <ng-template #defaultContent>
     <div class="video-container">
       <video
-        src="assets/videos/jumbotron-video.mp4"
+        src="assets/videos/jumbotron.mp4"
         controls="false"
         loop
         autoplay
