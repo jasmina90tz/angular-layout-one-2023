@@ -1,0 +1,93 @@
+.jumbotron {
+  width: 100%;
+  justify-content: center;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.image-container .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  object-fit: cover;
+}
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-container video::-webkit-media-controls {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.video-container video:hover::-webkit-media-controls {
+  opacity: 0;
+}
+.video-container .video-text {
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -50%);
+  color: rgba($color: #172a48, $alpha: 0.9);
+  font-size: 20px;
+  text-align: center;
+}
+.video-text {
+  position: relative;
+  display: inline;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  z-index: 1;
+}
+@-ms-viewport {
+  width: device-width;
+}
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.video-controls {
+  display: none;
+}
+.video-container video::-webkit-media-controls {
+  display: none !important;
+}
+.video-container video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+.video-container video::-webkit-media-controls-panel {
+  display: none !important;
+} /* For Firefox */
+.video-container video::-moz-media-controls {
+  display: none !important;
+}

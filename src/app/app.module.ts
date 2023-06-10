@@ -8,7 +8,6 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { TeamComponent } from './team/team.component';
 import { ForCompaniesComponent } from './for-companies/for-companies.component';
 import { ForApplicantsComponent } from './for-applicants/for-applicants.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
@@ -17,6 +16,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { TextOverImageComponent } from './text-over-image/text-over-image.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,6 @@ import { TextOverImageComponent } from './text-over-image/text-over-image.compon
     ProfileComponent,
     HomeComponent,
     AboutUsComponent,
-    TeamComponent,
     ForCompaniesComponent,
     ForApplicantsComponent,
     VacanciesComponent,
@@ -33,14 +32,11 @@ import { TextOverImageComponent } from './text-over-image/text-over-image.compon
     JumbotronComponent,
     FooterComponent,
     ImageSliderComponent,
-    TextOverImageComponent
+    TextOverImageComponent,
+    ServicesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

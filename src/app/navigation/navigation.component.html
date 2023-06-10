@@ -1,11 +1,18 @@
 <nav>
-  <div class="logo-burger-wrapper">
+  <div class="logo-burger-wrapper" style="display: inline-block">
     <a
       [routerLink]="['/']"
       class="logo-link"
       (click)="toggleMobileMenu($event)"
     >
-      <img src="assets/images/logo_trans.png" alt="Logo" class="logo" />
+      <div class="logo-wrapper">
+        <div class="logo">
+          <img src="assets/images/LogoAM.png" alt="Logo" class="logo" /><img
+            style="display: inline-block; width: 40%; margin-bottom: 2em"
+          />
+        </div>
+        <div class="logo-name"><img src="assets/images/name.png" /></div>
+      </div>
     </a>
     <div class="mobile-menu" (click)="toggleMobileMenu()">
       <div class="burger-icon-wrapper">
@@ -15,13 +22,16 @@
   </div>
   <div class="nav-wrapper" [ngClass]="{ open: isMobileMenuOpen }">
     <div class="nav-links">
-      <a routerLink="/" (click)="toggleMobileMenu()">Home</a>
-      <a routerLink="/about-us" (click)="toggleMobileMenu()">About Us</a>
-      <a routerLink="/team" (click)="toggleMobileMenu()">Team</a>
-      <a routerLink="/for-companies" (click)="toggleMobileMenu()">For Companies</a>
-      <a routerLink="/for-applicants" (click)="toggleMobileMenu()">For Applicants</a>
-      <a routerLink="/vacancies" (click)="toggleMobileMenu()">Vacancies</a>
-      <a routerLink="/contact" (click)="toggleMobileMenu()">Contact</a>
+      <a routerLink="/" (click)="toggleMobileMenu()">Start</a>
+      <a routerLink="/about-us" (click)="toggleMobileMenu()">Über uns</a>
+      <a routerLink="/for-companies" (click)="toggleMobileMenu()"
+        >Für Unternehmen</a
+      >
+      <a routerLink="/for-applicants" (click)="toggleMobileMenu()"
+        >Für Bewerber</a
+      >
+      <a routerLink="/vacancies" (click)="toggleMobileMenu()">Offene Stellen</a>
+      <a routerLink="/contact" (click)="toggleMobileMenu()">Kontakt</a>
     </div>
   </div>
 </nav>

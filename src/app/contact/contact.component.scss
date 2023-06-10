@@ -1,35 +1,97 @@
 h2 {
-    text-align: center;
+  text-align: center;
+  font-family: -webkit-body;
+  font-size: 30px;
+  font-weight: lighter;
+}
+h3 {
+  font-weight: lighter;
+  margin-bottom: 3em;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  font-family: "Open Sans";
+  font-weight: 300;
+  border-width: 1px;
+  border-style: solid;
+  border: #fff;
+  border: 1px dotted #fff !important;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: block;
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: none;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px dotted #fff !important;
+}
+@-ms-viewport {
+  width: device-width;
+}
+
+form.contact {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e e"
+    "f f";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 200px 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  .a {
+    grid-area: a;
   }
-  
-  .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
+  .b {
+    grid-area: b;
   }
-  
-  .form-group {
-    margin-bottom: 20px;
+  .c {
+    grid-area: c;
   }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
+  .d {
+    grid-area: d;
   }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .e {
+    grid-area: e;
+    textarea {
+      height: 200px;
+      min-height: auto;
+    }
   }
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  .f {
+    grid-area: f;
+    grid-column-end: auto;
   }
-  
+}

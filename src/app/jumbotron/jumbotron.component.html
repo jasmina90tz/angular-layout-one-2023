@@ -1,16 +1,38 @@
 <div class="jumbotron-content">
   <ng-container *ngIf="title === 'For Applicants'; else defaultContent">
-    <h2>{{ title }}</h2>
-    <img src="assets/images/vacancies-jumbotron.jpg" alt="Hello Nurse" class="jumbotron" />
-
+    <div class="video-container">
+      <video
+        src="assets/videos/Alphamed-video.mp4"
+        controls="false"
+        loop
+        autoplay
+      ></video>
+    </div>
   </ng-container>
 
   <ng-template #defaultContent>
-    <img src="assets/images/jumbotron.jpg" alt="Logo" class="jumbotron" />
-    <h2>HUMAN HEALTH CHALLENGES</h2>
-    <h3>
-      WITH US, FIND THE RIGHT STRATEGIC AND OPERATIONAL SOLUTION APPROACHES IN
-      DEMAND PLANNING AND DEMAND COVERING
-    </h3>
+    <div class="video-container">
+      <video
+        src="assets/videos/jumbotron.mp4"
+        controls="false"
+        loop
+        autoplay
+      ></video>
+      <div class="video-text">
+        <h1 style="font-family: Suranna">
+          HERAUSFORDERUNGEN BEI DER PERSONALBESETZUNG IM GESUNDHEITSSEKTOR
+        </h1>
+        <h3
+          style="
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+            font-display: center;
+          "
+        >
+          MIT UNS ZUSAMMENARBEITEN, UM DIE PASSENDE STELLE UND DEN GEWÜNSCHTEN
+          ARBEITSPLATZ ZU FINDEN
+        </h3>
+      </div>
+    </div>
   </ng-template>
 </div>

@@ -1,170 +1,100 @@
-<h1>for-companies works!</h1>
 <app-jumbotron [title]="'Regular Title'"></app-jumbotron>
 
-<h2>SERVICES</h2>
-<p>Our services are divided into the following areas:</p>
-
-<div>
-  <img
-    src="assets/images/services-for-companies-1.jpeg"
-    alt="Logo"
-    class="jumbotron"
-  />
-
-  <h3>Recruitment - International Nursing Recruitment</h3>
-
-  <div>
-    <!-- advantages -->
-    <h4>What advantages do foreign skilled workers offer?</h4>
-
+<div class="container">
+  <div class="a">
+    <!--services-->
+    <h2 class="header">DIENSTLEISTUNGEN</h2>
     <p>
-      The employment of international specialists enhances the global image,
-      expands the network and develops international relationships.
-    </p>
-
-    <p>
-      The business model is of course not new in essence - neither the
-      international recruitment of nursing staff, nor the permanent placement
-      itself. What should be new, however, is the way of implementation and the
-      quality path that we want to take for both customers and applicants.
-    </p>
-
-    <p>
-      Under the heading "Working, learning and living in Germany" we place the
-      applicant or candidate at the center of our efforts. With this conceptual
-      approach, we aim to invite motivated, medically and nursingly trained
-      specialists from abroad within the framework of the freedom of movement
-      for workers, but also from third countries to Germany, to put them into
-      qualified service here in cooperation with customers, to support them in
-      obtaining their professional recognition to support all levels and to
-      develop further at the highest possible professional level. These
-      specialists should be permanently bound to our customers and our
-      healthcare system through our distinct welcoming culture.
-    </p>
-
-    <p>
-      The search for qualified specialists takes time and ties up human
-      resources.
-    </p>
-
-    <p>
-      Our task is not only to bring you together with the right candidates, but
-      above all to prepare and accompany them for the process of integration
-      into the new environment. This ensures a higher success rate and ensures
-      the sustainability of your staffing.
+      Die Beschäftigung internationaler Fachkräfte wertet das globale Image auf,
+      erweitert das Netzwerk und baut internationale Beziehungen aus.
     </p>
   </div>
+  <div class="b">
+    <img
+      src="assets/images/n9.jpg"
+      alt="Logo"
+      class="jumbotron"
+      style="height: 300px; padding: 3em; height: 200px"
+    />
+  </div>
+</div>
+<div>
+  <div class="container1">
+    <div class="btn1">
+      <button (click)="onclick()" type="button" class="btn">
+        {{
+          ReadMore
+            ? ">> Internationale Rekrutierung von Pflegekräften"
+            : ">> Internationale Rekrutierung von Pflegekräften"
+        }}
+      </button>
+      <ng-container *ngIf="visible">
+        <div class="text">
+          <p>
+            Das Geschäftsmodell ist natürlich im Kern nicht neu, was neu sein
+            sollte, ist die Art der Umsetzung und der Qualitätsweg, den wir
+            sowohl für Kunden als auch für Antragsteller gehen wollen.
+          </p>
+
+          <p>
+            Die Suche nach qualifiziertem Fachpersonal erfordert Zeit und bindet
+            personelle Ressourcen.
+          </p>
+
+          <p>
+            Unsere Aufgabe ist es nicht nur, Sie mit Kandidaten und Kunden
+            zusammenzubringen, sondern vor allem, die Kandidaten auf den Prozess
+            der Integration in das neue Umfeld vorzubereiten und zu begleiten.
+            Das sorgt für eine höhere Erfolgsquote und sichert die
+            Nachhaltigkeit Ihrer Personalbesetzung.
+          </p>
+          <h2>Unser Dienstleistungsprozess für Sie</h2>
+          <p>
+            Alle Bewerber haben unser Screening bestanden. Unser Ziel ist es,
+            mit Transparenz, Empathie und Professionalität auf die Bedürfnisse
+            unserer Kunden einzugehen und die Fachkräfte auf ihrem Weg in ein
+            neues Leben zu begleiten.
+          </p>
+          <p>
+            Die größte Herausforderung sind die sprachlichen Anforderungen. Wir
+            haben unsere eigenen Sprachtrainer, die unsere Kandidaten gezielt
+            auf ein B1- oder B2-Niveau (Fachsprache) vorbereiten.
+          </p>
+
+          <p>
+            Wir kümmern uns standardmäßig um alle schriftlichen und
+            administrativen Angelegenheiten, von der Erstellung des Lebenslaufs
+            über die Einreichung von Anträgen bis hin zur (beglaubigten)
+            Übersetzung der Dokumente für die Anerkennung von Abschlüssen.
+          </p>
+
+          <p>
+            Wir beraten jeden Kandidaten persönlich während des gesamten
+            Prozesses und berichten darüber. Auf Wunsch führen wir ein
+            interkulturelles Training zur Integration in Deutschland oder ein
+            spezielles Fachsprachentraining durch.
+          </p>
+        </div>
+      </ng-container>
+      <!-- advantages -->
+    </div>
+  </div>
+
   <!-- /advantages -->
 
-  <div>
-    <!-- service process -->
-    <h4>Our service process for you</h4>
-    <p>
-      We take care of the pre-selection of candidates who have a qualification
-      that makes professional recognition possible.
-    </p>
-
-    <p>
-      All applicants have passed our screening. Our aim is to meet the needs of
-      our customers with transparency, empathy and professionalism and to
-      accompany the specialists on their way to a new life.
-    </p>
-
-    <p>
-      We organize the interview (by phone/Skype and in person) as well as the
-      transfer of the candidates to you.
-    </p>
-
-    <p>
-      The biggest challenge is the language requirements. We have our own
-      language coaches who specifically prepare our candidates for a B1 or B2
-      level (technical language).
-    </p>
-
-    <p>
-      As standard, we take care of all written and administrative matters from
-      the preparation of the CV, the submission of applications, the (certified)
-      translation of the documents for the recognition of degrees etc.
-    </p>
-
-    <p>
-      We personally advise each candidate throughout the process and report on
-      it. If desired, we carry out intercultural training for integration in
-      Germany or special technical language training.
-    </p>
-  </div>
   <!-- /service process -->
-</div>
-<!-- Recruitment -->
+  <!-- Recruitment -->
 
-<div>
-  <img
-    src="assets/images/services-for-companies-2.jpg"
-    alt="Logo"
-    class="jumbotron"
-  />
-
-  <h3>
-    HR Consulting - We increase your attractiveness as an employer and
-    rationalize your duty scheduling!
-  </h3>
-
-  <div>
-    <p>We work closely together in consulting projects:</p>
-
-    <p>
-      The Netherlands are 20 years ahead of Germany when it comes to making
-      working hours more flexible in the healthcare sector. We - the consulting
-      firm Noteboom & Van der Meulen and Eggert Kleffmann & Partner - use this
-      advantage for you and thus accelerate your learning curve.
-    </p>
-
-    <p>
-      Employer-oriented flexibility dominates in Germany. Flexibility exists
-      primarily as a control tool for corporate management. A conservative
-      attitude often prevails in the organization of working hours in the care
-      and health sector.
-    </p>
-
-    <p>
-      In an international comparison, the Netherlands has a high degree of
-      employee-oriented working time flexibility. That means: in the
-      Netherlands, the flexibilization of working hours primarily serves the
-      interests of the employees.
-    </p>
-
-    <p>
-      In view of the inevitable worsening of the shortage of skilled workers, it
-      is advisable for HR managers and nursing directors in Germany to look at
-      developments in the Netherlands and to be open to new ideas and approaches
-      for systemic flexibility and absence management.
-    </p>
-
-    <p>
-      We would be happy to tell you more about the flexibility concept in a
-      personal conversation and how Noteboom & Van der Meulen has already
-      introduced it to German hospitals and companies that care for the elderly!
-    </p>
-
-    <p>
-      In addition, we want to make our knowledge, our skills and our network
-      available to everyone involved in order to bring about improvements in the
-      system, in the organization and in intercultural cooperation.
-    </p>
-  </div>
-  <!-- asdf -->
-</div>
-<!-- HR consulting -->
-
-<!-- International recruitment of specialists (working, learning and living in Germany)
+  <!-- International recruitment of specialists (working, learning and living in Germany)
 
 <img src="assets/images/international-for-companies-page.jpeg" alt="International" /> -->
 
-<app-text-over-image
-  imageUrl="assets/images/international-for-companies-page.jpeg"
-  altText="International"
-  heading="International recruitment of specialists"
-  description="Working, learning, and living in Germany"
-></app-text-over-image>
+  <app-text-over-image
+    imageUrl="assets/images/international-for-companies-page.jpeg"
+    altText="International"
+    heading="Internationale Anwerbung von Krankenpflegern"
+    description="Arbeiten, lernen und leben in Deutschland"
+  ></app-text-over-image>
 
-<app-footer [title]="'Regular Title'"></app-footer>
+  <app-footer [title]="'Regular Title'"></app-footer>
+</div>
