@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './for-companies.component.html',
   styleUrls: ['./for-companies.component.scss'],
 })
-export class ForCompaniesComponent {}
+export class ForCompaniesComponent {
+  ReadMore: boolean = true;
+  visible: boolean = false;
+  onclick() {
+    this.ReadMore = !this.ReadMore;
+    this.visible = !this.visible;
+  }
+}

@@ -4,7 +4,7 @@
 .container {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: left;
   margin-left: 20em;
   margin-right: 20em;
 }
@@ -34,6 +34,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0px;
   font-weight: lighter;
+  color: #fff;
 }
 .a {
   grid-area: a;
@@ -51,4 +52,31 @@ p {
 .transition {
   touch-action: manipulation;
   transition: all 0.3s ease-in-out;
+}
+.btn {
+  justify-content: left;
+  display: table;
+  color: #f8f4bc;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  cursor: grab;
+}
+.container1 {
+  display: block;
+  margin-left: 20em;
+  margin-bottom: 10em;
+  margin-right: 20em;
+}
+.btn2 {
+  justify-content: left;
+  display: table;
+  color: #f8f4bc;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  cursor: grab;
+}
+h2 {
+  font-weight: lighter;
 }
