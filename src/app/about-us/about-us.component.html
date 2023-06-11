@@ -1,9 +1,13 @@
 <app-jumbotron [title]="'Regular Title'"></app-jumbotron>
-<div>
-  <div class="container">
-    <div class="a">
+<div class="row">
+  <div class="left">
+    <img src="assets/images/aprofile.png" alt="img" class="image" />
+  </div>
+  <div class="right">
+    <div class="content">
       <h2 class="header">Über uns</h2>
       <p>Gründer und CEO von Alpha Medical d.o.o.</p>
+
       <p>Abschluss an der juristischen Fakultät der Universität Tuzla.</p>
       <p>
         Herr Civic verfügt über umfangreiche Berufserfahrung in der
@@ -15,10 +19,10 @@
         Unterzeichnung der Arbeitsverträge in Deutschland verantwortlich.
       </p>
     </div>
-    <div class="b">
-      <img src="assets/images/aprofile.png" alt="img" class="image" />
-    </div>
   </div>
+</div>
+
+<div class="content2">
   <p class="moto">
     Lebensmotto: "Erfolg ist nicht der Schlüssel zum Glück, Zufriedenheit ist
     der Schlüssel zum Erfolg. Wenn Sie Ihre Arbeit lieben, werden Sie auch
@@ -26,10 +30,8 @@
   </p>
   <div class="centered-container">
     <!-- slider -->
+    <app-image-slider></app-image-slider>
   </div>
-
-  <app-image-slider></app-image-slider>
-
   <!-- /slider -->
 
   <div class="centered-container">
@@ -48,7 +50,7 @@
 
   <div class="centered-container">
     <!-- our motto -->
-    <h3 class="unmotto">Unser Motto</h3>
+    <h2 class="unmotto">Unser Motto</h2>
     <p>
       Wir leisten einen aktiven Beitrag zur Bekämpfung des Fachkräftemangels im
       deutschen Gesundheitswesen, indem wir Fachkräften aus dem Ausland helfen,
@@ -56,9 +58,8 @@
       beruflichen Anerkennung begleiten.
     </p>
   </div>
-  <div class="centered-container">
-    <h3 class="unmotto">Unser Auftrag</h3>
-    <p>Menschen über Ländergrenzen und Kulturen hinweg zusammenzubringen.</p>
-  </div>
+  <h2 class="unmotto">Unser Auftrag</h2>
+  <p>Menschen über Ländergrenzen und Kulturen hinweg zusammenzubringen.</p>
+
   <app-footer [title]="'Regular Title'"></app-footer>
 </div>
