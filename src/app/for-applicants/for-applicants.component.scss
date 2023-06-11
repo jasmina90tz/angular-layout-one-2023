@@ -1,3 +1,106 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 2em;
+  padding-top: 2em;
+  justify-content: center;
+  column-gap: 20px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.header {
+  margin-right: 10px;
+}
+p {
+  text-align: justify;
+  padding: 1em;
+  display: block;
+  padding: 0;
+  font-size: 18px;
+  padding-top: 0;
+  font-family: "Open Sans";
+  font-weight: 400;
+  display: block;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: lighter;
+}
+.image {
+  flex-shrink: 0;
+  width: 50%;
+  padding: 1em;
+  width: 500px;
+  position: inherit;
+}
+
 @-ms-viewport {
   width: device-width;
+}
+.moto {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-style: italic;
+  font-family: Open Sans;
+  color: rgba($color: rgb(243, 240, 240), $alpha: 0.9);
+  font-weight: lighter;
+  font-size: 28px;
+  padding: 50px;
+}
+.unmotto {
+  font-size: 28px;
+  display: flex;
+  justify-content: left;
+  font-weight: lighter;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-family: suranna;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+  color: #fff;
+}
+p {
+  font-size: 18px;
+  font-family: Suranna;
+  font-weight: lighter;
+  text-align: justify;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: #fff;
+}
+.image-container {
+  margin-top: 1em;
+}
+h3 {
+  font-family: suranna;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+  color: #fff;
+}
+a {
+  color: #ffffba;
+  text-transform: uppercase;
+}
+.list {
+  display: list-item;
+  margin-left: 2em;
 }
