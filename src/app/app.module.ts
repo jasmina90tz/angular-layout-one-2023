@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { TextOverImageComponent } from './text-over-image/text-over-image.component';
 import { ServicesComponent } from './services/services.component';
+import { UberUnsComponent } from './uber-uns/uber-uns.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ServicesComponent } from './services/services.component';
     ImageSliderComponent,
     TextOverImageComponent,
     ServicesComponent,
+    UberUnsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
