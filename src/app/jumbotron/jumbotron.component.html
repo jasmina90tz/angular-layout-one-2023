@@ -1,13 +1,11 @@
 <div class="jumbotron-content">
   <ng-container *ngIf="title === 'For Applicants'; else defaultContent">
-    <div class="video-container">
-      <video
-        src="assets/videos/Alphamed-video.mp4"
-        controls="false"
-        loop
-        autoplay
-      ></video>
-    </div>
+    <h2>{{ title }}</h2>
+    <img
+      src="assets/images/vacancies-jumbotron.jpg"
+      alt="Hello Nurse"
+      class="jumbotron"
+    />
   </ng-container>
 
   <ng-template #defaultContent>
@@ -19,18 +17,18 @@
         autoplay
       ></video>
       <div class="video-text">
-        <h1 style="font-family: Suranna">
-          HERAUSFORDERUNGEN BEI DER PERSONALBESETZUNG IM GESUNDHEITSSEKTOR
+        <h1 style="font-family: Suranna; font-size: 32px">
+          DER GESUNDHEITSSEKTOR UND SEINE HERAUSFORDERUNGEN IM PERSONALBEREICH
         </h1>
         <h3
           style="
             font-family: 'Times New Roman', Times, serif;
             font-weight: 100;
             font-display: center;
+            font-size: 25px;
           "
         >
-          MIT UNS ZUSAMMENARBEITEN, UM DIE PASSENDE STELLE UND DEN GEWÜNSCHTEN
-          ARBEITSPLATZ ZU FINDEN
+          FINDEN SIE MIT UNS DIE PASSENDE STELLE UND DEN GEWÜNSCHTEN EINSATZ
         </h3>
       </div>
     </div>
