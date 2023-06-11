@@ -19,21 +19,24 @@
         <div class="burger-icon">&#9776;</div>
       </div>
     </div>
-  </div>
-  <div class="nav-wrapper" [ngClass]="{ open: isMobileMenuOpen }">
-    <div class="nav-links">
-      <a routerLink="/" (click)="toggleMobileMenu()">Start</a>
-      <a routerLink="/about-us" (click)="toggleMobileMenu()">Über uns</a>
-      <a routerLink="/for-companies" (click)="toggleMobileMenu()"
-        >Für Unternehmen</a
-      >
-      <a routerLink="/for-applicants" (click)="toggleMobileMenu()"
-        >Für Bewerber</a
-      >
-      <a routerLink="/vacancies" (click)="toggleMobileMenu()">Offene Stellen</a>
-      <a routerLink="/contact" (click)="toggleMobileMenu()">Kontakt</a>
+    <div class="links">
+      <div class="nav-wrapper" [ngClass]="{ open: isMobileMenuOpen }">
+        <div class="nav-links">
+          <a routerLink="/" (click)="toggleMobileMenu()">Start</a>
+          <a routerLink="/about-us" (click)="toggleMobileMenu()">Über uns</a>
+          <a routerLink="/for-companies" (click)="toggleMobileMenu()"
+            >Für Unternehmen</a
+          >
+          <a routerLink="/for-applicants" (click)="toggleMobileMenu()"
+            >Für Bewerber</a
+          >
+          <a routerLink="/vacancies" (click)="toggleMobileMenu()"
+            >Offene Stellen</a
+          >
+          <a routerLink="/contact" (click)="toggleMobileMenu()">Kontakt</a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
-
 <router-outlet></router-outlet>
