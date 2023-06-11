@@ -57,10 +57,12 @@ ul {
   color: #bbbb;
   display: block;
   transition: all 0.3s ease;
+  word-wrap: break-word;
 }
 .footer-col ul li a:hover {
   color: #ffffff;
   padding-left: 8px;
+  word-wrap: break-word;
 }
 .footer-col .social-links a {
   display: inline-block;
