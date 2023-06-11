@@ -31,7 +31,7 @@ ul {
 .footer-col h4 {
   font-size: 18px;
   color: #fff;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin-bottom: 35px;
   font-weight: 500;
   position: relative;
@@ -88,4 +88,7 @@ ul {
 }
 .social-links {
   margin-top: 2em;
+}
+h4 {
+  text-transform: uppercase;
 }
