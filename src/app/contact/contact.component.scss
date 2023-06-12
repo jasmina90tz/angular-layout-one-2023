@@ -95,29 +95,59 @@ form.contact {
       color: #fff;
     }
   }
-  .f {
-    grid-area: f;
-    grid-column-end: auto;
-    color: #fff;
-    width: 200px;
-    font-size: 12px;
-    border: none !important;
-  }
-  .g {
-    grid-area: g;
-    color: #fff;
-    grid-column-end: auto;
-    color: #ffffba;
-  }
 }
 .upload-file {
   border: none !important;
   margin-top: 2em;
-  margin-left: 1em;
 }
 .upload {
   margin-left: 1em;
-  margin-bottom: 3em;
-  margin-left: 2.2em;
+  margin-bottom: 1em;
+  margin-left: 1em;
   color: #ffffba;
+}
+.header {
+  text-align: center;
+}
+.header h1 {
+  font-family: serif;
+  font-size: 38px;
+  font-family: "Times New Roman";
+}
+
+.content {
+  margin: 100px;
+}
+
+.margin25 {
+  margin: 25px;
+}
+
+.upload {
+  cursor: pointer;
+}
+.btn {
+  grid-area: g;
+  color: #fff;
+  grid-column-end: auto;
+  color: #ffffba !important;
+}
+.custom-file {
+  text-align: left;
+  align-items: center;
+}
+.btn {
+  color: #fff;
+  width: 150px;
+  font-size: 12px;
+  border: 2px solid #faf4f4;
+  padding: 12px 20px;
+  padding: 12px 20px;
+  background-color: #fffdfd1e !important;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.4s linear;
+}
+.btn:hover {
+  color: rgb(23, 168, 230) !important;
 }
