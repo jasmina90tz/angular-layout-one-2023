@@ -58,7 +58,8 @@
       ></textarea>
     </div>
   </form>
-  <div class="custom-file">
+  <div class="uploadcontainer">
+    <label class="upload">Datei wählen:</label>
     <form action="/api/upload" method="post" enctype="multipart/form-data">
       <input
         type="file"
@@ -67,7 +68,6 @@
         aria-describedby="inputGroupFileAddon01"
       />
     </form>
-    <label class="upload" for="inputGroupFile01">Datei wählen</label>
   </div>
   <button class="btn" type="submit">ABSENDEN</button>
 </div>
