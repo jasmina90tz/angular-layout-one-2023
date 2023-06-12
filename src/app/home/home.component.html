@@ -1,26 +1,31 @@
 <app-jumbotron [title]="'Regular Title'"></app-jumbotron>
 <div>
   <div class="container">
-    <div fxLayout="column" fxLAyoutGap="16px grid">
-      <div fxFlex="25%" *ngFor="let num of [1]">
-        <a href="/about-us">
-          <div class="card">
-            <img src="assets/images/n9.jpg" alt="nurse" />
-            <div class="title">
-              <h1>Über Uns</h1>
+    <div fxLayout="column" fxLayoutGap="6px grid">
+      <div class="homep">
+        <div fxFlex="40%">
+          <a href="/about-us">
+            <div class="card">
+              <img src="assets/images/n9.jpg" alt="nurse" />
+              <div class="title">
+                <h1>Über Uns</h1>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="/for-companies">
-          <div class="card">
-            <img src="assets/images/n1.jpg" alt="nurse" />
-            <div class="title">
-              <h1>Dienstleistungen</h1>
+          </a>
+        </div>
+        <div fxFlex="40%">
+          <a href="/about-us">
+            <div class="card">
+              <img src="assets/images/n1.jpg" alt="nurse" />
+              <div class="title">
+                <h1>Dienstleistungen</h1>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 <app-footer></app-footer>

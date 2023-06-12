@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
     "@fortawesome/fontawesome-free": "^6.4.0",
+    "@syncfusion/ej2-angular-dropdowns": "^21.2.8",
     "bootstrap": "^4.6.2",
     "jquery": "^3.7.0",
     "ng-event-source": "^1.0.14",

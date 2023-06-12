@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 7em;
+  display: flex;
 }
 * {
   margin: 0px;
@@ -25,7 +26,7 @@ body {
 }
 .card {
   height: 500px;
-  margin: 50px;
+  margin: 30px;
   overflow: hidden;
   border-radius: 3px;
 }
@@ -51,6 +52,7 @@ h1 {
   visibility: visible;
   font-family: -webkit-body;
   font-weight: lighter;
+  word-break: break-word;
 }
 .card:hover {
   cursor: pointer;
@@ -68,4 +70,7 @@ a {
 }
 @-ms-viewport {
   width: device-width;
+}
+.homep {
+  justify-content: center;
 }
