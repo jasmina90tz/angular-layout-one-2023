@@ -24,7 +24,7 @@
         type="text"
         id="forname"
         name="forname"
-        [(ngModel)]="formData.name"
+        [(ngModel)]="formData.lastname"
         required
       />
     </div>
@@ -34,7 +34,7 @@
         type="number"
         id="telefon"
         name="telefon"
-        [(ngModel)]="formData.name"
+        [(ngModel)]="formData.phone"
         required
       />
     </div>
@@ -57,9 +57,19 @@
         required
       ></textarea>
     </div>
-
-    <button class="f" type="submit">ABSENDEN</button>
   </form>
-</div>
+  <div class="custom-file">
+    <form action="/api/upload" method="post" enctype="multipart/form-data">
+      <input
+        type="file"
+        class="upload-file"
+        id="inputGroupFile01"
+        aria-describedby="inputGroupFileAddon01"
+      />
+    </form>
 
+    <label class="upload" for="inputGroupFile01">Datei wählen</label>
+  </div>
+  <button class="g" type="submit">ABSENDEN</button>
+</div>
 <app-footer [title]="'Regular Title'"></app-footer>

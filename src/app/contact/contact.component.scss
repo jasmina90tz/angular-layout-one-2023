@@ -44,6 +44,7 @@ textarea {
   height: 40px;
   width: 100%;
   font-size: 20px;
+  color: #fff;
 }
 
 button[type="submit"] {
@@ -65,33 +66,58 @@ form.contact {
   grid-template-areas:
     "a b"
     "c d"
-    "e e"
-    "f f";
+    "e e";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 200px 1fr;
+  grid-template-rows: 1fr 1fr 200px;
   row-gap: 20px;
   column-gap: 20px;
   .a {
     grid-area: a;
+    color: #fff;
   }
   .b {
     grid-area: b;
+    color: #fff;
   }
   .c {
     grid-area: c;
+    color: #fff;
   }
   .d {
     grid-area: d;
+    color: #fff;
   }
   .e {
     grid-area: e;
     textarea {
       height: 200px;
       min-height: auto;
+      color: #fff;
     }
   }
   .f {
     grid-area: f;
     grid-column-end: auto;
+    color: #fff;
+    width: 200px;
+    font-size: 12px;
+    border: none !important;
   }
+  .g {
+    grid-area: g;
+    color: #fff;
+    grid-column-end: auto;
+    color: #ffffba;
+  }
+}
+.upload-file {
+  border: none !important;
+  margin-top: 2em;
+  margin-left: 1em;
+}
+.upload {
+  margin-left: 1em;
+  margin-bottom: 3em;
+  margin-left: 2.2em;
+  color: #ffffba;
 }
