@@ -98,8 +98,11 @@ form.contact {
 }
 .upload-file {
   border: none !important;
-
+  margin-top: 3em;
   margin-bottom: 1em;
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
 }
 .header {
   text-align: center;
@@ -118,10 +121,10 @@ form.contact {
   margin: 25px;
 }
 .upload {
-  margin-top: 3em;
-  align-items: right;
+  margin-top: 4em;
+  align-items: left;
   font-family: arial;
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn {
   color: #fff;
@@ -138,4 +141,22 @@ form.contact {
 }
 .btn:hover {
   color: rgb(23, 168, 230) !important;
+}
+.accept {
+  margin-bottom: 1em;
+}
+.box {
+  width: 15px;
+  margin-left: 0.5em;
+}
+.checkbox {
+  display: flex;
+}
+label {
+  margin-top: 1em;
+  margin-left: 0.5em;
+  margin-bottom: 2em;
+}
+.uploadcontainer {
+  display: flex;
 }
