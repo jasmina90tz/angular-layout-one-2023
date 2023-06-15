@@ -11,5 +11,25 @@ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <loc>https://alphamedical-bih.com/</loc>
 <lastmod>2023-06-15T12:17:07+00:00</lastmod>
 </url>
+<url>
+<loc>https://alphamedical-bih.com/about-us</loc>
+<lastmod>2023-06-15T13:41:07+00:00</lastmod>
+</url>
+<url>
+<loc>https://alphamedical-bih.com/contact</loc>
+<lastmod>2023-06-15T13:41:07+00:00</lastmod>
+</url>
+<url>
+<loc>https://alphamedical-bih.com/home</loc>
+<lastmod>2023-06-15T13:41:07+00:00</lastmod>
+</url>
+<url>
+<loc>https://alphamedical-bih.com/for-companies</loc>
+<lastmod>2023-06-15T13:41:07+00:00</lastmod>
+</url>
+<url>
+<loc>https://alphamedical-bih.com/for-applicants</loc>
+<lastmod>2023-06-15T13:41:07+00:00</lastmod>
+</url>
 
 </urlset>
