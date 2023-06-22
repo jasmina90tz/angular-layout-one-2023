@@ -29,14 +29,22 @@
       />
     </div>
     <div class="f">
-      <input
-        placeholder="Land"
-        type="text"
-        id="land"
-        name="landn"
-        [(ngModel)]="formData.land"
-        required
-      />
+      <label
+        >Land:
+        <select
+          class="land"
+          placeholder="Land"
+          type="text"
+          id="land"
+          name="landn"
+          [(ngModel)]="formData.land"
+          required
+        >
+          <option value="1">Bosnien und Herzegowina</option>
+          <option value="2">Kroatien</option>
+          <option value="3">Mazedonien</option>
+        </select>
+      </label>
     </div>
     <div class="c">
       <input
