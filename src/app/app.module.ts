@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { TextOverImageComponent } from './text-over-image/text-over-image.component';
 import { ServicesComponent } from './services/services.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ServicesComponent } from './services/services.component';
     ImageSliderComponent,
     TextOverImageComponent,
     ServicesComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FlexLayoutModule],
   providers: [],

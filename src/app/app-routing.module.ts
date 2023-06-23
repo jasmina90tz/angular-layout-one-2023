@@ -8,6 +8,7 @@ import { ForApplicantsComponent } from './for-applicants/for-applicants.componen
 import { VacanciesComponent } from './vacancies/vacancies.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // HomeComponent is the root
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'for-applicants', component: ForApplicantsComponent },
   { path: 'vacancies', component: VacanciesComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
   // other routes...
 ];
 
