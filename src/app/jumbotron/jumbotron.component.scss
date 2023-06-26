@@ -92,3 +92,9 @@
 .video-container video::-moz-media-controls {
   display: none !important;
 }
+img {
+  width: 100%;
+  object-fit: cover;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
