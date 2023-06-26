@@ -11,7 +11,7 @@ export class JumbotronComponent {
   @Input() title: string = '';
   gifUrl: SafeResourceUrl;
   constructor(private sanitizer: DomSanitizer) {
-    const path = 'assets/images/gif.gif';
+    const path = 'assets/images/gifff.gif';
     this.gifUrl = this.sanitizer.bypassSecurityTrustResourceUrl(path);
   }
 }
