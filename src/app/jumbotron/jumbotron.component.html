@@ -1,13 +1,13 @@
 <div class="jumbotron-content">
   <ng-container *ngIf="title === 'For Applicants'; else defaultContent">
-    <div class="video-container">
+    <div class="img-container">
       <img src="assets/images/alpha4.png" />
     </div>
   </ng-container>
   <ng-template #defaultContent>
-    <div class="video-container">
+    <div class="img-container">
       <img [src]="gifUrl" alt="gif" />
-      <div class="video-text">
+      <div class="img-text">
         <h1 style="font-family: Suranna; font-size: 32px">
           DER GESUNDHEITSSEKTOR UND SEINE HERAUSFORDERUNGEN IM PERSONALBEREICH
         </h1>
