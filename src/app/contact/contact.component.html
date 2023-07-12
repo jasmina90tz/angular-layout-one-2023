@@ -4,11 +4,13 @@
   <h3>Wir beraten Sie gerne. Nehmen Sie Kontakt mit uns auf.</h3>
   <form
     class="contact"
-    method="POST"
+    action="POST"
     name="contactform"
     data-netlify="true"
     onsubmit="submit"
+    data-netlify-honeypot="bot-field"
   >
+    <input class="d-none" name="bot-field" />
     <div class="a">
       <input placeholder="Vorname" type="text" id="name" name="name" required />
     </div>
