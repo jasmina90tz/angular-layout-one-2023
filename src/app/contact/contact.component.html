@@ -1,44 +1,19 @@
 <app-jumbotron [title]="'Regular Title'"></app-jumbotron>
-
 <div style="max-width: 870px; margin: 0 auto; padding: 70px 10px">
   <h2 style="display: flex; justify-content: flex-start">KONTAKT</h2>
   <h3>Wir beraten Sie gerne. Nehmen Sie Kontakt mit uns auf.</h3>
-  <form class="contact" method="POST" netlify>
+  <form class="contact">
     <div class="a">
-      <input
-        placeholder="Vorname"
-        type="text"
-        id="name"
-        name="name"
-        [(ngModel)]="formData.name"
-        required
-      />
+      <input placeholder="Vorname" type="text" id="name" name="name" required />
     </div>
     <div class="b">
       <input
         placeholder="Nachname"
         type="text"
-        id="forname"
-        name="forname"
+        id="lastname"
+        name="lastname"
         required
       />
-    </div>
-    <div class="f">
-      <label
-        >Land:
-        <select
-          class="land"
-          placeholder="Land"
-          type="text"
-          id="land"
-          name="landn"
-          required
-        >
-          <option value="1">Bosnien und Herzegowina</option>
-          <option value="2">Serbien</option>
-          <option value="3">Mazedonien</option>
-        </select>
-      </label>
     </div>
     <div class="c">
       <input
@@ -66,6 +41,23 @@
         required
       ></textarea>
     </div>
+    <div class="f">
+      <label
+        >Land:
+        <select
+          class="land"
+          placeholder="Land"
+          type="text"
+          id="land"
+          name="landn"
+          required
+        >
+          <option value="1">Bosnien und Herzegowina</option>
+          <option value="2">Serbien</option>
+          <option value="3">Mazedonien</option>
+        </select>
+      </label>
+    </div>
   </form>
   <div class="uploadcontainer">
     <label class="upload">Datei wählen:</label>
@@ -79,7 +71,7 @@
     </form>
   </div>
   <div class="checkbox">
-    <input class="box" type="checkbox" required /><label
+    <input class="box" type="checkbox" /><label
       >Ich stimme der Datenschutzerklärung zu.</label
     >
   </div>
