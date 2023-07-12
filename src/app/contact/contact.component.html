@@ -2,7 +2,13 @@
 <div style="max-width: 870px; margin: 0 auto; padding: 70px 10px">
   <h2 style="display: flex; justify-content: flex-start">KONTAKT</h2>
   <h3>Wir beraten Sie gerne. Nehmen Sie Kontakt mit uns auf.</h3>
-  <form class="contact">
+  <form
+    class="contact"
+    method="POST"
+    name="contactform"
+    data-netlify="true"
+    onsubmit="submit"
+  >
     <div class="a">
       <input placeholder="Vorname" type="text" id="name" name="name" required />
     </div>
@@ -58,23 +64,24 @@
         </select>
       </label>
     </div>
+    <div class="uploadcontainer">
+      <label class="upload">Datei wählen:</label>
+      <form action="/api/upload" method="post" enctype="multipart/form-data">
+        <input
+          type="file"
+          class="upload-file"
+          id="inputGroupFile01"
+          aria-describedby="inputGroupFileAddon01"
+        />
+      </form>
+    </div>
+    <div class="checkbox">
+      <input class="box" type="checkbox" /><label
+        >Ich stimme der Datenschutzerklärung zu.</label
+      >
+    </div>
+    <button class="btn" type="submit">ABSENDEN</button>
   </form>
-  <div class="uploadcontainer">
-    <label class="upload">Datei wählen:</label>
-    <form action="/api/upload" method="post" enctype="multipart/form-data">
-      <input
-        type="file"
-        class="upload-file"
-        id="inputGroupFile01"
-        aria-describedby="inputGroupFileAddon01"
-      />
-    </form>
-  </div>
-  <div class="checkbox">
-    <input class="box" type="checkbox" /><label
-      >Ich stimme der Datenschutzerklärung zu.</label
-    >
-  </div>
-  <button class="btn" type="submit">ABSENDEN</button>
 </div>
+
 <app-footer [title]="'Regular Title'"></app-footer>
