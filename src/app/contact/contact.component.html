@@ -3,11 +3,7 @@
 <div style="max-width: 870px; margin: 0 auto; padding: 70px 10px">
   <h2 style="display: flex; justify-content: flex-start">KONTAKT</h2>
   <h3>Wir beraten Sie gerne. Nehmen Sie Kontakt mit uns auf.</h3>
-  <form
-    class="contact"
-    #contactForm="ngForm"
-    (ngSubmit)="submitForm(contactForm)"
-  >
+  <form class="contact" method="POST" netlify>
     <div class="a">
       <input
         placeholder="Vorname"
@@ -24,7 +20,6 @@
         type="text"
         id="forname"
         name="forname"
-        [(ngModel)]="formData.lastname"
         required
       />
     </div>
@@ -37,11 +32,10 @@
           type="text"
           id="land"
           name="landn"
-          [(ngModel)]="formData.land"
           required
         >
           <option value="1">Bosnien und Herzegowina</option>
-          <option value="2">Kroatien</option>
+          <option value="2">Serbien</option>
           <option value="3">Mazedonien</option>
         </select>
       </label>
@@ -52,7 +46,6 @@
         type="number"
         id="telefon"
         name="telefon"
-        [(ngModel)]="formData.phone"
         required
       />
     </div>
@@ -62,7 +55,6 @@
         type="email"
         id="email"
         name="email"
-        [(ngModel)]="formData.email"
         required
       />
     </div>
@@ -71,7 +63,6 @@
         placeholder="Nachricht"
         id="message"
         name="message"
-        [(ngModel)]="formData.message"
         required
       ></textarea>
     </div>
@@ -88,7 +79,7 @@
     </form>
   </div>
   <div class="checkbox">
-    <input class="box" type="checkbox" /><label
+    <input class="box" type="checkbox" required /><label
       >Ich stimme der Datenschutzerklärung zu.</label
     >
   </div>
