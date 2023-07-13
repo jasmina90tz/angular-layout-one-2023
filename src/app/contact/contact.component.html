@@ -5,11 +5,14 @@
   <form
     class="contact"
     method="POST"
+    action="/contact"
     name="contactform"
-    netlify
-    netlify-honeypot="bot-field"
+    data-netlify="true"
+    onsubmit="submit"
+    data-netlify-honeypot="bot-field"
   >
-    <input class="d-none" type="hidden" name="bot-field" />
+    <input class="d-none" name="bot-field" />
+    <input type="hidden" name="form-name" value="contactform" />
     <div class="a">
       <input placeholder="Vorname" type="text" id="name" name="name" required />
     </div>
