@@ -8,21 +8,17 @@ h3 {
   font-weight: lighter;
   margin-bottom: 3em;
 }
-
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
 }
-
 .form-group {
   margin-bottom: 20px;
 }
-
 label {
   display: block;
   margin-bottom: 5px;
 }
-
 input,
 textarea {
   width: 100%;
@@ -46,7 +42,6 @@ textarea {
   font-size: 20px;
   color: #fff;
 }
-
 button[type="submit"] {
   padding: 10px 20px;
   background-color: none;
@@ -60,7 +55,6 @@ button[type="submit"] {
 @-ms-viewport {
   width: device-width;
 }
-
 form.contact {
   display: grid;
   grid-template-areas:
@@ -128,11 +122,9 @@ form.contact {
     font-size: 38px;
     font-family: "Times New Roman";
   }
-
   .content {
     margin: 100px;
   }
-
   .margin25 {
     margin: 25px;
   }
