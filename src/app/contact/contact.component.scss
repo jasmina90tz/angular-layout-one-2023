@@ -67,7 +67,9 @@ form.contact {
     "a b"
     "c d"
     "e e"
-    "f f";
+    "f f"
+    "g g"
+    "h h";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 200px;
   row-gap: 20px;
@@ -96,73 +98,87 @@ form.contact {
       color: #fff;
     }
   }
-}
-.upload-file {
-  border: none !important;
-  margin-top: 4em;
-  margin-bottom: 1em;
-  width: 300px;
-  height: 40px;
-  font-size: 13px;
-}
-.header {
-  text-align: center;
-}
-.header h1 {
-  font-family: serif;
-  font-size: 38px;
-  font-family: "Times New Roman";
-}
+  .f {
+    grid-area: f;
+    color: #fff;
+  }
+  .g {
+    grid-area: g;
+    color: #fff;
+    display: flex;
+  }
+  .h {
+    grid-area: h;
+    color: #fff;
+    display: flex;
+  }
+  .upload-file {
+    border: none !important;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    width: 300px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .header {
+    text-align: center;
+  }
+  .header h1 {
+    font-family: serif;
+    font-size: 38px;
+    font-family: "Times New Roman";
+  }
 
-.content {
-  margin: 100px;
-}
+  .content {
+    margin: 100px;
+  }
 
-.margin25 {
-  margin: 25px;
-}
-.upload {
-  margin-top: 4em;
-  align-items: left;
-  font-family: arial;
-  font-size: 16px;
-}
-.btn {
-  color: #fff;
-  width: 150px;
-  font-size: 12px;
-  border: 2px solid #faf4f4;
-  padding: 12px 20px;
-  padding: 12px 20px;
-  background-color: #fffdfd1e !important;
-  font-weight: 400;
-  cursor: pointer;
-  transition: color 0.4s linear;
-  font-size: 16px;
-}
-.btn:hover {
-  color: rgb(23, 168, 230) !important;
-}
-.accept {
-  margin-bottom: 1em;
-}
-.box {
-  width: 15px;
-  margin-left: 0.5em;
-}
-.checkbox {
-  display: flex;
-}
-label {
-  margin-top: 1em;
-  margin-left: 0.5em;
-  margin-bottom: 2em;
-}
-.uploadcontainer {
-  display: flex;
-}
-.land {
-  font-size: 16px;
-  margin-left: 1em;
-  background-color: #fff;
+  .margin25 {
+    margin: 25px;
+  }
+  .upload {
+    margin-top: 4em;
+    align-items: left;
+    font-family: arial;
+    font-size: 16px;
+  }
+  .btn {
+    color: #fff;
+    width: 150px;
+    font-size: 12px;
+    border: 2px solid #faf4f4;
+    padding: 12px 20px;
+    padding: 12px 20px;
+    background-color: #fffdfd1e !important;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    font-size: 16px;
+  }
+  .btn:hover {
+    color: rgb(23, 168, 230) !important;
+  }
+  .accept {
+    margin-bottom: 1em;
+  }
+  .box {
+    width: 15px;
+    margin-left: 0.5em;
+  }
+  .checkbox {
+    display: flex;
+  }
+  label {
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-bottom: 2em;
+  }
+  .uploadcontainer {
+    display: flex;
+  }
+  .land {
+    font-size: 16px;
+    margin-left: 1em;
+    background-color: #fff;
+  }
 }
