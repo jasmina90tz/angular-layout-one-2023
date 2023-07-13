@@ -4,13 +4,12 @@
   <h3>Wir beraten Sie gerne. Nehmen Sie Kontakt mit uns auf.</h3>
   <form
     class="contact"
-    action="POST"
+    method="POST"
     name="contactform"
-    data-netlify="true"
-    onsubmit="submit"
-    data-netlify-honeypot="bot-field"
+    netlify
+    netlify-honeypot="bot-field"
   >
-    <input class="d-none" name="bot-field" />
+    <input class="d-none" type="hidden" name="bot-field" />
     <div class="a">
       <input placeholder="Vorname" type="text" id="name" name="name" required />
     </div>
@@ -68,17 +67,16 @@
     </div>
     <div class="uploadcontainer">
       <label class="upload">Datei wählen:</label>
-      <form action="/api/upload" method="post" enctype="multipart/form-data">
-        <input
-          type="file"
-          class="upload-file"
-          id="inputGroupFile01"
-          aria-describedby="inputGroupFileAddon01"
-        />
-      </form>
+      <input
+        type="file"
+        class="upload-file"
+        id="inputGroupFile01"
+        aria-describedby="inputGroupFileAddon01"
+        name="file"
+      />
     </div>
     <div class="checkbox">
-      <input class="box" type="checkbox" /><label
+      <input class="box" type="checkbox" name="privacy" /><label
         >Ich stimme der Datenschutzerklärung zu.</label
       >
     </div>
