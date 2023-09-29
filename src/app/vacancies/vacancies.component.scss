@@ -272,7 +272,8 @@ p {
   grid-template-columns: 300px 600px;
   grid-gap: 30px 30px;
   justify-content: center;
-  margin-left: 6em;
+  margin-left: 20em;
+  align: right;
 }
 
 .row .left {
@@ -334,4 +335,11 @@ p {
 }
 .image-container {
   margin-top: 1em;
+}
+.gotopbtn{
+font-size:40px;
+color: whitesmoke;
+font-weight: 600;
+float: right;
+margin-right: 20px;
 }

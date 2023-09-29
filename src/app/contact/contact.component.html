@@ -5,12 +5,11 @@
   <form
     class="contact"
     method="POST"
-    action="/contact"
-    name="contactform"
+    name="contactForm"
     netlify
-    onsubmit="submit"
+    netlify-honeypot="bot-field"
   >
-    <input type="hidden" name="form-name" value="contactform" />
+    <input type="hidden" name="contactForm" value="contactForm" />
     <div class="a">
       <input placeholder="Vorname" type="text" id="name" name="name" required />
     </div>
@@ -84,5 +83,7 @@
     <button class="btn" type="submit">ABSENDEN</button>
   </form>
 </div>
-
+<div class="gototop">
+  <a class="gotopbtn" href="about-us"><i class="fas fa-arrow-up"></i></a>
+</div>
 <app-footer [title]="'Regular Title'"></app-footer>
