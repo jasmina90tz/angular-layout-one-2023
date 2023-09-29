@@ -72,6 +72,7 @@ h2 {
   margin-top: 1em;
   margin-left: 1em;
   color: #fff;
+  text-align: center;
 }
 p {
   font-size: 18px;
@@ -107,6 +108,8 @@ a {
 }
 .centered-container {
   justify-content: center;
+  display: grid;
+  justify-items: center;
 }
 .gotopbtn{
 font-size:40px;
@@ -114,4 +117,9 @@ color: whitesmoke;
 font-weight: 600;
 float: right;
 margin-right: 20px;
+}
+.list-container{
+justify: center;
+display: grid;
+justify-content: center;
 }
