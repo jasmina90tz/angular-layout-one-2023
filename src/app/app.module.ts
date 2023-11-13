@@ -19,7 +19,6 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { TextOverImageComponent } from './text-over-image/text-over-image.component';
 import { ServicesComponent } from './services/services.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { NewContactComponent } from './new-contact/new-contact.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,6 @@ import { NewContactComponent } from './new-contact/new-contact.component';
     TextOverImageComponent,
     ServicesComponent,
     PrivacyPolicyComponent,
-    NewContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FlexLayoutModule],
   providers: [],
