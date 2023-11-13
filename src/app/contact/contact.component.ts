@@ -7,5 +7,13 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  formData = {};
-}
+  formData = {
+  name: '',
+  lastname:'',
+  telefon:'',
+  email:'',
+  message:'',
+  land:'',
+  file: null
+  };
+ }
